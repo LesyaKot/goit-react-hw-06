@@ -13,7 +13,7 @@ export default function ContactList() {
   );
 
   return (
-    <div>
+    <div className={css.wrapper}>
       <ul className={css.list}>
         {filteredContacts.map((contact) => (
           <li className={css.item} key={contact.id}>
@@ -21,6 +21,7 @@ export default function ContactList() {
               id={contact.id}
               name={contact.name}
               number={contact.number}
+              hasContacts={filteredContacts.length > 0}
             />
           </li>
         ))}
@@ -28,3 +29,5 @@ export default function ContactList() {
     </div>
   );
 }
+
+

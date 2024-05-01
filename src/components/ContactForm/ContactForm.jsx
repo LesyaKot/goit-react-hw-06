@@ -36,7 +36,7 @@ export default function ContactForm() {
         placeholder="Enter a number..."
         required
       />
-      <button type="submit">Add contact</button>
+      <button className={css.btn} type="submit">Add contact</button>
     </form>
   );
 }

@@ -5,6 +5,20 @@
   text-align: center;
 }
 
+body {
+  background: linear-gradient(to right, #fda579, #f77173);
+}
+
+/* @keyframes backgroundAnimation {
+  0% { background-color: #ff9966; }
+  50% { background-color: #ff5e62; }
+  100% { background-color: #ff9966; }
+} */
+/* 
+body {
+  animation: backgroundAnimation 5s infinite;
+} */
+
 .logo {
   height: 6em;
   padding: 1.5em;
