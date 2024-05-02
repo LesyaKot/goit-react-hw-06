@@ -15,7 +15,7 @@ export const contactsSlice = createSlice({
   reducers: {
     addContact: {
       prepare: (newContact) => {
-        return { payload: { ...newContact, id: nanoid(5) } };
+        return { payload: { ...newContact, id: nanoid() } };
       },
 
       reducer: (state, { payload }) => {
